@@ -12,7 +12,7 @@ if image_file is not None:
     image = image_file.getvalue()
 
     response = requests.post(
-        "http://127.0.0.1:3000/prediction",
+        "https://dpatel9923-covid19-prediction.hf.space/prediction",
         files = {
             "image": BytesIO(image)
         }
